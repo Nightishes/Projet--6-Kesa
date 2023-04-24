@@ -1,0 +1,54 @@
+/* // Banner */
+.banner-home, .banner-darken{
+  text-align: center;
+  height: 223px;
+  margin: 0 0 43px 0;
+  border-radius: 25px;
+}
+
+.banner-home{
+  position: relative;
+}
+
+.banner-darken{
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  position: relative;
+}
+
+
+.description-banner{
+  position: absolute;
+  width: 100%;
+}
+
+.description-banner img{
+  width: 100%;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.banner-home h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  line-height: 142.6%;
+}
+
+
+@media all and (max-width: 650px) {
+
+  .banner-home,.description-banner,.description-banner img, .banner-darken{
+    height: 111px;
+  }
+
+  .banner-home h2{
+    font-size: 24px;
+    line-height: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+/* // Home --> Offers */
+.marketplace-square{
+    background: #F7F7F7;
+    border-radius: 25px;
+    padding: 56px 0 0 0;
+  }
+  
+  .offer-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 60px;
+  }
+
+  
+@media all and (max-width: 650px) {
+  .marketplace-square{
+    padding: 0 0 25px 0; 
+  }
+}

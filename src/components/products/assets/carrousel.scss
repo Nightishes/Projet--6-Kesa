@@ -1,0 +1,40 @@
+.carrousel-slider .image-carrousel, .carrousel-slider {
+    object-fit: cover;
+}
+
+.carrousel-slider{
+    position: relative;
+}
+
+.image-carrousel{
+    width: 100%;
+    height: 20em;
+    overflow: auto;
+}
+
+.arrow-slider img{
+    width: 46.68px;
+    height: 79.2px;
+}
+
+.arrow-slider{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    transform: translate(0, -50%);
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+}
+
+#arrow-right{
+    right: 23px;
+}
+
+#arrow-left{
+    left: 23px;
+}
+
+.image-arrow-flex{
+    display: flex;
+}

@@ -1,4 +1,5 @@
 import Card from "./Card";
+import './assets/marketplace.css'
 
 function Marketplace() {
     return (

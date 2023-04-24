@@ -1,0 +1,63 @@
+/* fixer partage css */
+
+p{
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.collapse-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+
+
+.collapse{
+    background: #FF6060;
+    border-radius: 10px; 
+    width: 84vw;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapse p{
+    color: white;
+    text-align: left;
+    margin-left : 18px;
+}
+
+.collapse img {
+    margin-right: 29px;
+}
+
+.information-cadre{
+    background: #F7F7F7;
+    border-radius: 5px 5px;
+    width: 80vw;
+}
+
+.information-cadre{
+    padding: 36px 27px 19px 18px;
+}
+
+@media all and (max-width: 750px){
+
+    .collapse img {
+        margin-right: 10px;
+    }
+    
+    
+    .information-cadre{
+        padding: 23px 6px 52px 12px;
+    }
+
+    .information-cadre p{
+        font-size: 12px;
+    }
+}

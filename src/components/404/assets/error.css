@@ -1,0 +1,36 @@
+.page-404-main{
+    text-align: center;
+    margin-top: 169px;
+    margin-bottom: 159px;
+}
+
+.message-not-found{
+    font-weight: 700;
+    font-size: 288px;
+}
+
+
+
+.page-404-main p{
+    font-size: 36px;
+    line-height: 142.6%;
+    margin: 66px 0 182px 0;
+}
+
+@media all and (max-width: 650px){ 
+    .message-not-found{
+        font-size: 96px;
+    }
+
+    .page-404-main p{
+        font-size: 18px;
+        margin: 11px 0 133px 0;
+    }
+
+    .page-404-main{
+        text-align: center;
+        margin-top: 95px;
+        margin-bottom: 50px;
+    }
+
+}

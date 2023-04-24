@@ -1,0 +1,56 @@
+h2, h3{
+    color: #FF6060;
+}
+
+
+h2{
+    font-size: 36px;
+line-height: 142.6%;
+
+}
+
+h3{
+    font-size: 18px;
+    line-height: 142.6%;
+}
+
+.description-appartment{
+    display: flex;
+    margin: 30px 0 0 0;
+}
+
+.tag-appartment{
+    background: #FF6060;
+    border-radius: 10px;
+    padding: 3px 40px 2px 41px;
+    width: 115px;
+    color: white;
+
+}
+
+.description-equipment-flex{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;  
+}
+
+.description-equipment-flex .collapse{
+    width: 41vw ;
+    height: 52px;
+}
+
+.description-equipment-flex .information-cadre{
+    width: 37.5vw; 
+}
+
+
+.host-appartment{
+    display: flex;
+    gap: 20px;
+}
+
+.information-host-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

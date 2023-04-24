@@ -5,8 +5,8 @@ function Header() {
       <header className="header-flex">
         <h1><img src={logo} alt="Logo Kasea"></img></h1>
         <ul className="header-list">
-          <li>Accueil</li> 
-          <li>A Propos</li>
+          <li><a href='/'>Accueil</a></li> 
+          <li><a href='/about'>A Propos</a></li>
         </ul>
       </header>
     );
