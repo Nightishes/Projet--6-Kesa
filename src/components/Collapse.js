@@ -7,21 +7,20 @@ import './about/assets/collapse.css'
 function Collapse(props) {
     const title = props.title;
     const text = props.text
+    const className =props.className
 
     const [isOpen, setIsOpen] = useState(false)
     return  isOpen ? (
       <div className='collapse-flex'>
-        <button className="collapse" onClick={() => setIsOpen(false)}><p>{title}</p><img src={arrow_up} alt='Flèche ouverture'></img></button>
+        <button  className={className} onClick={() => setIsOpen(false)}>{title}<img src={arrow_up} alt='Flèche ouverture'></img></button>
         <div className='information-cadre'>
-            <p>
             {text}
-            </p>
         </div>
       </div>
 
     ) : (
     <div className='collapse-flex'>
-        <button className="collapse" onClick={() => setIsOpen(true)}><p>{title}</p><img src={arrow_down} alt='Flèche fermeture'></img></button>
+        <button className={className} onClick={() => setIsOpen(true)}>{title}<img src={arrow_down} alt='Flèche fermeture'></img></button>
     </div> 
     
     );

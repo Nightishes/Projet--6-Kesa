@@ -13,18 +13,18 @@
     height: 100%;
     object-fit: cover;
     overflow: auto;
+    border-radius: 10px;
   }
   
   .description-offer{
     position: absolute;
-    bottom: 60px;
+    bottom: 0px;
     left: 0;
-    margin: 0px 20px;
+    margin: 0px 0px 0 20px;
     font-size: 18px;
-    display: flex;
-    align-items: flex-end;
     color: #FFFFFF;
     width: 66%;
+    min-height: 100px;
   }
 
 
@@ -33,5 +33,15 @@
     .card-offer{
       width: 100%;
     }
+
+    .offer-flex {
+      gap: 20px 60px;
+  }
+  .marketplace-square {
+    background: white;
+    border-radius: 25px;
+    padding: 56px 0 0 0;
+}
+
   }
   

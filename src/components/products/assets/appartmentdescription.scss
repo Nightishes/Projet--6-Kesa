@@ -1,31 +1,46 @@
-h2, h3{
+h1, h2{
     color: #FF6060;
 }
 
-
-h2{
+h1{
     font-size: 36px;
 line-height: 142.6%;
 
 }
 
-h3{
+h2{
     font-size: 18px;
     line-height: 142.6%;
 }
 
-.description-appartment{
-    display: flex;
+.tags-appartment, .description-appartment, .description-equipment-flex{
     margin: 30px 0 0 0;
 }
+
+.description-appartment{
+    display: flex; 
+    flex-direction: column;
+}
+
+.flex-information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tags-appartment{
+    display: flex; 
+    gap: 10px;   
+}
+
 
 .tag-appartment{
     background: #FF6060;
     border-radius: 10px;
-    padding: 3px 40px 2px 41px;
-    width: 115px;
+    padding: 8px 20px 8px 20px;
+    min-width: 115px;
     color: white;
-
+    text-align: center;
 }
 
 .description-equipment-flex{
@@ -34,23 +49,70 @@ h3{
     gap: 50px;  
 }
 
-.description-equipment-flex .collapse{
-    width: 41vw ;
+.appartment-collapse {
+    width: 41vw;
+    max-width: 44.5em;
     height: 52px;
+}
+.appartment-collapse h3{
+    color: white;
+    text-align: left;
+    margin-left : 18px;
+    font-size: 24px;
+}
+.appartment-collapse img {
+    margin-right: 10px;
 }
 
 .description-equipment-flex .information-cadre{
-    width: 37.5vw; 
+    width: 38vw;
+    max-width: 34.5em;
 }
 
+.appartment-description-text{
+    font-size: 18px;
+}
+
+.host-appartment-ratings{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
 
 .host-appartment{
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
-.information-host-title{
+.host-name{
+    width: 93px;
+    height: 52px;
+    margin-top: 7px;   
+}
+
+.host-appartment img{
+    border-radius: 9999px;
+    height: 64px;
+}
+
+.star-ratings{
+    margin: 30px 0 0 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 10px;
+}
+.star-ratings img{
+    height: 24px;
+    filter: invert(50%) sepia(80%) saturate(1473%) hue-rotate(323deg) brightness(100%) contrast(118%); 
+}
+
+@media all and (max-width: 750px){
+
+    .appartment-collapse {
+        width: 41vw;
+        height: 52px;
+    }
+
+    .description-equipment-flex .information-cadre{
+        width: 37.5vw; 
+    }
 }

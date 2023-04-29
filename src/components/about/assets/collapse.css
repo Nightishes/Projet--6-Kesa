@@ -1,8 +1,4 @@
-/* fixer partage css */
-
 p{
-    font-size: 24px;
-    line-height: 142.6%;
     color: #FF6060;
 }
 
@@ -14,47 +10,67 @@ p{
     margin-bottom: 33px;
 }
 
-
+.about{
+    min-width: 61vw;
+    max-width: 73em;
+    height: 47px;
+}
 
 .collapse{
     background: #FF6060;
-    border-radius: 10px; 
-    width: 84vw;
-    height: 47px;
+    border-radius: 5px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
+    border: 0;
 }
 
-.collapse p{
+.collapse h2{
     color: white;
     text-align: left;
     margin-left : 18px;
+    font-size: 24px;
 }
 
 .collapse img {
     margin-right: 29px;
 }
 
-.information-cadre{
-    background: #F7F7F7;
-    border-radius: 5px 5px;
-    width: 80vw;
-}
 
 .information-cadre{
     padding: 36px 27px 19px 18px;
+    background: #F7F7F7;
+    border-radius: 5px 5px;
+    max-width: 59vw;
 }
 
+.information-cadre h3{
+    font-weight: 400;
+}
+
+.about-description{
+    font-size: 24px;
+}
 @media all and (max-width: 750px){
 
+
+    .about {
+        min-width: 90vw;
+        max-width: 73em;
+    }
     .collapse img {
         margin-right: 10px;
     }
     
-    
+    .collapse p{
+        margin-left : 11px;
+        font-size: 13px;
+    }
+
     .information-cadre{
         padding: 23px 6px 52px 12px;
+        max-width: 88vw;
     }
 
     .information-cadre p{

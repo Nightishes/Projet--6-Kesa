@@ -7,8 +7,8 @@ header, main{
   margin: 0px 100px;
 }
 
-p, li, h2{
-  font-family: 'Montserrat';
+p, li, h1, h2, h3{
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -22,6 +22,10 @@ li,a{
 
 a{
   text-decoration: none;
+}
+
+.current-page{
+  text-decoration: underline;
 }
 
 .header-flex{
@@ -68,6 +72,9 @@ footer p{
 }
 @media all and (max-width: 650px) {
   
+  .header-flex{
+   padding: 20px 0;
+  }
   li,a{
     font-size: 12px;
   }

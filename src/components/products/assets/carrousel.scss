@@ -12,19 +12,16 @@
     overflow: auto;
 }
 
-.arrow-slider img{
-    width: 46.68px;
-    height: 79.2px;
-}
 
 .arrow-slider{
     cursor: pointer;
     position: absolute;
     top: 45%;
     transform: translate(0, -50%);
-    font-size: 45px;
-    color: #fff;
     z-index: 1;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
 }
 
 #arrow-right{
@@ -37,4 +34,12 @@
 
 .image-arrow-flex{
     display: flex;
+}
+
+.slider-number{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(0, -50%);
+    color: white;
 }

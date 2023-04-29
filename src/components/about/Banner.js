@@ -3,9 +3,14 @@ import './assets/banner-about.css'
 
 function BannerAbout() {
     return (
-      <div className="banner-about">
-        <img src={banner_home_image} alt=' paysage'></img> 
+      <h1>
+        <div className="banner-about">
+        <div className='div-image-banner'>
+        <img src={banner_home_image} alt='paysage'></img>
+        </div>
+        <div className='banner-darken-about'></div>
       </div>
+      </h1> 
     );
   }
   

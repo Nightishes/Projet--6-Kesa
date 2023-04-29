@@ -46,6 +46,9 @@
   .banner-home,.description-banner,.description-banner img, .banner-darken{
     height: 111px;
   }
+  .banner-home, .banner-darken {
+    margin: 0 0 22px 0;
+  }
 
   .banner-home h2{
     font-size: 24px;

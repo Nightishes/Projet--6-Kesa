@@ -21,6 +21,7 @@ const goToPrevious = () => {
   setSliderIndex(newIndex)
 }
 
+
     return (
     <div className='carrousel-slider'>
       <div className='image-arrow-flex'>
@@ -28,7 +29,7 @@ const goToPrevious = () => {
         <img className='image-carrousel'  src={image[sliderIndex]} alt=''></img>
         <button className='arrow-slider' onClick={()=>goToNext()} id='arrow-left'><img  src={next}  alt='Bouton pour aller vers le prochain slider'></img></button>
       </div>
-    <p>{sliderIndex + 1}/{image.length }</p>
+    <p className='slider-number'>{sliderIndex + 1}/{image.length }</p>
     </div>
     );
   }
