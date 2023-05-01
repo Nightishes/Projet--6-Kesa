@@ -38,7 +38,11 @@ h2{
     background: #FF6060;
     border-radius: 10px;
     padding: 8px 20px 8px 20px;
-    min-width: 115px;
+    min-width: 84px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
     color: white;
     text-align: center;
 }
@@ -50,10 +54,10 @@ h2{
 }
 
 .appartment-collapse {
-    width: 41vw;
-    max-width: 44.5em;
+    width: min(39vw, 45em);
     height: 52px;
 }
+
 .appartment-collapse h3{
     color: white;
     text-align: left;
@@ -65,8 +69,7 @@ h2{
 }
 
 .description-equipment-flex .information-cadre{
-    width: 38vw;
-    max-width: 34.5em;
+    width: 36vw;
 }
 
 .appartment-description-text{
@@ -107,12 +110,98 @@ h2{
 
 @media all and (max-width: 750px){
 
+    
+    .tags-appartment, .description-appartment, .description-equipment-flex {
+        margin: 15px 0 0 0;
+    }
+
     .appartment-collapse {
-        width: 41vw;
+        width: 92vw;
         height: 52px;
     }
 
+    .collapse-flex {
+        margin-bottom: 0; 
+    }
+
     .description-equipment-flex .information-cadre{
-        width: 37.5vw; 
+        width: 89.5vw;
+        max-width: none;
+    }
+    .description-equipment-flex{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .flex-information {
+        flex-direction: column; 
+    }
+
+    .host-appartment-ratings {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .host-name {
+        width: 80px;
+        height: 100%;
+        margin-top: 3px;
+    }
+    .star-ratings{
+        margin: 15px 0 0 0;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+
+.loader-message{
+    margin: 100px 0;
+    font-size: 100px;
+    color: #FF6060;
+}
+@media all and (max-width: 450px) {
+    h1{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    h3, .appartment-collapse h3{
+        font-size: 13px;
+    }
+
+    .appartment-collapse h3 {
+        margin-left: 11px;
+    }
+
+    .host-name h2, .appartment-description-text{
+        font-size: 12px;
+    }
+    .star-ratings img{
+        height: 13px;
+    }
+
+    .host-name {
+        width: 60px;
+        margin-top: 3px;
+    }
+
+    .appartment-collapse {   
+        height: 30px;
+    }
+
+    .description-equipment-flex .information-cadre {
+        width: 88vw;
+    }
+    
+    .information-cadre {
+        padding: 23px 6px 1px 11px;
+    }
+    .tag-appartment{
+        font-size: 10px;
+        padding: 4px;
     }
 }

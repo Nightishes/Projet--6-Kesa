@@ -46,6 +46,10 @@
   .banner-home,.description-banner,.description-banner img, .banner-darken{
     height: 111px;
   }
+
+  .banner-home, .banner-darken,.description-banner img{
+    border-radius: 10px;
+  }
   .banner-home, .banner-darken {
     margin: 0 0 22px 0;
   }

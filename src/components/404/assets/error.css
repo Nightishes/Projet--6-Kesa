@@ -1,6 +1,6 @@
 .page-404-main{
     text-align: center;
-    margin-top: 169px;
+    margin-top: 106px;
     margin-bottom: 159px;
 }
 
@@ -17,6 +17,9 @@
     margin: 66px 0 182px 0;
 }
 
+.link-return{
+    text-decoration: underline;
+}
 @media all and (max-width: 650px){ 
     .message-not-found{
         font-size: 96px;

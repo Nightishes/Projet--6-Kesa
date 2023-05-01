@@ -42,7 +42,7 @@ p{
     padding: 36px 27px 19px 18px;
     background: #F7F7F7;
     border-radius: 5px 5px;
-    max-width: 59vw;
+    max-width: 58vw;
 }
 
 .information-cadre h3{
@@ -73,7 +73,7 @@ p{
         max-width: 88vw;
     }
 
-    .information-cadre p{
+    .information-cadre h3{
         font-size: 12px;
     }
 }

@@ -6,7 +6,7 @@ function Error() {
         <main className='page-404-main'>
             <h1 className='message-not-found'>404</h1>
             <p>Oups! la page que vous demandez n'existe pas.</p>
-            <Link to="/">Retour à la page d'accueil</Link>
+            <Link to="/" className='link-return'>Retourner sur la page d’accueil</Link>
         </main>
     )
 }

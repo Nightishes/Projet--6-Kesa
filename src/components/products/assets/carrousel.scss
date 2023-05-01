@@ -10,6 +10,7 @@
     width: 100%;
     height: 20em;
     overflow: auto;
+    border-radius: 25px;
 }
 
 
@@ -24,6 +25,11 @@
     border: 0;
 }
 
+
+.image-arrow-flex{
+    display: flex;
+}
+
 #arrow-right{
     right: 23px;
 }
@@ -31,15 +37,32 @@
 #arrow-left{
     left: 23px;
 }
-
-.image-arrow-flex{
-    display: flex;
-}
-
 .slider-number{
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translate(0, -50%);
     color: white;
+}
+
+@media all and (max-width:450px){
+
+   .arrow-img{
+    height: 20px; 
+   }
+   .arrow-slider{
+    top: 49%;
+    transform: translate(0, -50%);
+    }
+
+    #arrow-right{
+        right: 5px;
+    }
+
+    #arrow-left{
+        left: 5px;
+    }
+    .slider-number{
+        display: none;
+    }
 }

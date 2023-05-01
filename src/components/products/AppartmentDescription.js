@@ -7,43 +7,34 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
 import StarRating from "./StarRating";
-
-
+import Loader from "./Loader";
 
 
 function AppartmentDescription() {
     const appartmentID = useParams();
     console.log(appartmentID)
-   
     const [appartment, setAppartment] = useState([])
-   
     const [isDataLoading, setDataLoading] = useState(true)
    
     useEffect(() => {
       async function fetchData() {
         setDataLoading(true)
-        try {
-          const listAppartment = getAppartments();
-          const appartment =  listAppartment.find((appartment) => appartment.id === appartmentID.id)
-          if(appartment.id !== appartmentID.id){
-            <Navigate to="/404" replace={true} /> 
-          }
+        const listAppartment = getAppartments();
+        const appartment =  listAppartment.find((appartment) => appartment.id === appartmentID.id)
+        if(appartment.id !== appartmentID.id)
+        {<Navigate to='/404'/>; setDataLoading(false)}
+        else{ 
           setAppartment(appartment)
-        } catch (err) {
-          console.log(err)
-        } finally{
-          setDataLoading(false)
-        }
+          setDataLoading(false)}
       }
+
       fetchData()
-     
-      
     }, [appartmentID.id])
     
     
 
     return (<>
-    {isDataLoading ? (console.log("loading")) 
+    {isDataLoading ? <Loader/> 
     : (<> 
     <Carrousel src = {appartment.pictures}/>
     <div className='description-appartment'>

@@ -15,7 +15,7 @@
   }
 
   
-@media all and (max-width: 650px) {
+@media all and (max-width: 800px) {
   .marketplace-square{
     padding: 0 0 25px 0; 
   }
