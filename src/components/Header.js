@@ -16,16 +16,16 @@ function Header() {
       aboutNav.className ='current-page'
     }
   }
-  //router link active
   
-   
     return (
       <header className="header-flex">
         <img src={logo} alt="Logo Kasea"></img>
+        <nav>
         <ul className="header-list">
-          <li><a  id='home-nav'  href='/'>Accueil</a></li> 
-          <li><a  id='about-nav' href='/about' >A Propos</a></li>
+          <li><a id='home-nav'  href='/'>Accueil</a></li> 
+          <li><a id='about-nav' href='/about' >A Propos</a></li>
         </ul>
+        </nav>
       </header>
     );
   }

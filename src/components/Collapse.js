@@ -12,7 +12,7 @@ function Collapse(props) {
     const [isOpen, setIsOpen] = useState(false)
     return  isOpen ? (
       <div className='collapse-flex'>
-        <button  className={className} onClick={() => setIsOpen(false)}>{title}<img src={arrow_up} alt='Flèche ouverture'></img></button>
+        <button  className={className} onClick={() => setIsOpen(false)}>{title}<img className='arrow-collapse' src={arrow_up} alt='Flèche ouverture'></img></button>
         <div className='information-cadre'>
             {text}
         </div>
@@ -20,7 +20,7 @@ function Collapse(props) {
 
     ) : (
     <div className='collapse-flex'>
-        <button className={className} onClick={() => setIsOpen(true)}>{title}<img src={arrow_down} alt='Flèche fermeture'></img></button>
+        <button className={className} onClick={() => setIsOpen(true)}>{title}<img  className='arrow-collapse' src={arrow_down}  alt='Flèche fermeture'></img></button>
     </div> 
     
     );

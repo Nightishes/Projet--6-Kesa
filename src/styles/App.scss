@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-// header en H1 ou garder pour le main?
 header, main{
   margin: 0px 100px;
+  max-width: 1440px;
 }
 
 p, li, h1, h2, h3{
@@ -92,4 +92,10 @@ footer p{
   footer p{
     font-size: 12px;
   }
+}
+
+@media all and (max-width : 350px){
+  .header-flex img {
+    width: 80px;
+}
 }

@@ -9,7 +9,7 @@ function Products() {
       <>
        <Header />
         <main>
-        <AppartmentDescription/>
+        <AppartmentDescription classname='appartment-description-main'/>
         </main> 
         <Footer /></>
        

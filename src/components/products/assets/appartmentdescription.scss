@@ -54,7 +54,7 @@ h2{
 }
 
 .appartment-collapse {
-    width: min(39vw, 45em);
+    width: min(41vw, 45em);
     height: 52px;
 }
 
@@ -69,7 +69,9 @@ h2{
 }
 
 .description-equipment-flex .information-cadre{
-    width: 36vw;
+    max-width: 554px;
+    min-width: 270px;
+    width: clamp(368px, 38vw, 588px);
 }
 
 .appartment-description-text{
@@ -108,6 +110,30 @@ h2{
     filter: invert(50%) sepia(80%) saturate(1473%) hue-rotate(323deg) brightness(100%) contrast(118%); 
 }
 
+@media all and (max-width: 1200px) {
+    .appartment-collapse {
+        width: min(39vw, 35rem);
+    }
+
+    .description-equipment-flex .information-cadre{
+        width: clamp(340px, min(37.5vw, 35vw), 450px);
+    }
+
+}
+
+
+@media all and (max-width : 1000px) {
+    .appartment-collapse {
+        width: min(44vw, 45em);
+    }
+    .description-equipment-flex .information-cadre{
+        width: clamp(290px, min(38.5vw, 89%), 458px);
+    }
+}
+
+
+
+
 @media all and (max-width: 750px){
 
     
@@ -121,7 +147,7 @@ h2{
     }
 
     .collapse-flex {
-        margin-bottom: 0; 
+        margin-bottom: 20px;
     }
 
     .description-equipment-flex .information-cadre{
@@ -130,7 +156,7 @@ h2{
     }
     .description-equipment-flex{
         flex-direction: column;
-        gap: 25px;
+        gap: 5px;
     }
 
     .flex-information {
@@ -161,6 +187,8 @@ h2{
     font-size: 100px;
     color: #FF6060;
 }
+
+
 @media all and (max-width: 450px) {
     h1{
         font-size: 18px;
@@ -189,19 +217,31 @@ h2{
         margin-top: 3px;
     }
 
-    .appartment-collapse {   
+    .appartment-collapse { 
+        width: 89vw;  
         height: 30px;
     }
 
     .description-equipment-flex .information-cadre {
-        width: 88vw;
+        width: clamp(71%, 85vw, 96%);
+        min-width: 200px;
     }
     
     .information-cadre {
         padding: 23px 6px 1px 11px;
     }
+
     .tag-appartment{
         font-size: 10px;
         padding: 4px;
+    }
+}
+
+@media all and (max-width: 350px){
+    .tag-appartment {
+        min-width: 50px;
+    }
+    .star-ratings {
+        gap: 5px;
     }
 }

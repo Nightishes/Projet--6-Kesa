@@ -5,14 +5,16 @@ import './assets/appartmentdescription.scss';
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import { Navigate } from "react-router-dom";
 import StarRating from "./StarRating";
 import Loader from "./Loader";
+import { useNavigate } from "react-router-dom";
+
 
 
 function AppartmentDescription() {
     const appartmentID = useParams();
-    console.log(appartmentID)
+
+    const navigate = useNavigate()
     const [appartment, setAppartment] = useState([])
     const [isDataLoading, setDataLoading] = useState(true)
    
@@ -21,15 +23,21 @@ function AppartmentDescription() {
         setDataLoading(true)
         const listAppartment = getAppartments();
         const appartment =  listAppartment.find((appartment) => appartment.id === appartmentID.id)
-        if(appartment.id !== appartmentID.id)
-        {<Navigate to='/404'/>; setDataLoading(false)}
-        else{ 
+        if(null != appartment){
           setAppartment(appartment)
-          setDataLoading(false)}
-      }
+          setDataLoading(false)
+          return;
+        } 
 
+        console.log(appartment);
+        navigate('/404')
+      }
+       
+      
       fetchData()
-    }, [appartmentID.id])
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [appartmentID.id], useNavigate) 
+    
     
     
 

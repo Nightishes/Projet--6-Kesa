@@ -45,15 +45,23 @@
     color: white;
 }
 
+@media all and (max-width: 750px){
+    .slider-number{
+        display: none;
+    }
+
+    .arrow-img{
+        height: 20px; 
+       }
+       .arrow-slider{
+        top: 49%;
+        transform: translate(0, -50%);
+        }
+        
+}
 @media all and (max-width:450px){
 
-   .arrow-img{
-    height: 20px; 
-   }
-   .arrow-slider{
-    top: 49%;
-    transform: translate(0, -50%);
-    }
+ 
 
     #arrow-right{
         right: 5px;
@@ -62,7 +70,5 @@
     #arrow-left{
         left: 5px;
     }
-    .slider-number{
-        display: none;
-    }
+    
 }

@@ -59,3 +59,9 @@
     line-height: 100%;
   }
 }
+
+@media all and (max-width: 350px){
+  .banner-home h2{
+    font-size: 18px;
+  }
+}
