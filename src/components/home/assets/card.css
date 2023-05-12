@@ -2,21 +2,23 @@
 .card-offer, .image-darken{
     width: 340px;
     height: 340px;
-    border: 1px solid;
     border-radius: 10px;
   }
+
+
 .card-offer{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%) #FF6060;
   position: relative;
 }
   .image-darken{
     position: relative;
-    background: #000000;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%) #FF6060;
     mix-blend-mode: darken;
     opacity: 0.3;
     bottom: 343px;
     z-index: 2;
   }
+
   .image-offer{
     width: 100%;
     height: 100%;
@@ -40,8 +42,13 @@
 
 
   @media  all and (max-width: 800px) {
-    .card-offer{
-      width: 100%;
+    .card-offer, .image-darken{
+      width: 90vw;
+      border: none;
+    }
+
+    .image-darken{
+      bottom: 342px;
       height: 100%;
     }
     .offer-flex {
@@ -51,8 +58,12 @@
   }
 
   @media all and (max-width: 450px) {
-    .card-offer{
+    .card-offer, .image-darken{
       height: 255px;
+      width: 100%;
+    }
+    .image-darken{
+      bottom: 257px;
     }
   }
   
