@@ -6,7 +6,7 @@ import next from './assets/images/arrow-left.png'
 
 
 function Carrousel(props) {
-  const image = props.src ;
+  const image = props.src;
   
   const [sliderIndex, setSliderIndex] = useState(0);
 
@@ -25,9 +25,9 @@ const goToPrevious = () => {
     return (
     <div className='carrousel-slider'>
       <div className='image-arrow-flex'>
-        <button className='arrow-slider'  onClick={()=>goToPrevious()}  id='arrow-right'><img className='arrow-img' src={back}  alt='Bouton pour aller vers le slider précédent'></img></button>
+        <button className='arrow-slider'  style={{ display: image.length === 1 ? 'none' : 'block'}} onClick={()=>goToPrevious()}  id='arrow-right'><img className='arrow-img' src={back}  alt='Bouton pour aller vers le slider précédent'></img></button>
         <img className='image-carrousel'  src={image[sliderIndex]} alt=''></img>
-        <button className='arrow-slider' onClick={()=>goToNext()} id='arrow-left'><img className='arrow-img'  src={next}  alt='Bouton pour aller vers le prochain slider'></img></button>
+        <button className='arrow-slider' style={{ display: image.length === 1 ? 'none' : 'block'}} onClick={()=>goToNext()} id='arrow-left'><img className='arrow-img'  src={next}  alt='Bouton pour aller vers le prochain slider'></img></button>
       </div>
     <p className='slider-number'>{sliderIndex + 1}/{image.length }</p>
     </div>

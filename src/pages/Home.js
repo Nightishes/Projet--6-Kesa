@@ -9,7 +9,7 @@ function Home() {
         <Header />
         <main>
         <Banner />
-        <Marketplace/>
+        <Marketplace />
         </main>
         <Footer />
         </>

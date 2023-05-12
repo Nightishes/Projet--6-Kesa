@@ -5,6 +5,7 @@ function Header() {
   const currentUrl = useLocation(); 
   const currentLocation= window.location.origin;
   const currentTotalUrl = currentLocation + currentUrl.pathname
+
   window.onload= function(){
     const homeNav = document.getElementById("home-nav")
     const aboutNav = document.getElementById("about-nav")
@@ -16,10 +17,9 @@ function Header() {
       aboutNav.className ='current-page'
     }
   }
-  
     return (
       <header className="header-flex">
-        <img src={logo} alt="Logo Kasea"></img>
+       <a id='home-nav'  href='/'><img src={logo} alt="Logo Kasea"></img></a> 
         <nav>
         <ul className="header-list">
           <li><a id='home-nav'  href='/'>Accueil</a></li> 

@@ -7,7 +7,7 @@ import './about/assets/collapse.css'
 function Collapse(props) {
     const title = props.title;
     const text = props.text
-    const className =props.className
+    const className = props.className
 
     const [isOpen, setIsOpen] = useState(false)
     return  isOpen ? (

@@ -49,13 +49,11 @@ p{
     max-width: 1023px;
 }
 
-.information-cadre h3{
-    font-weight: 400;
-    color: #FF6060;
-}
+
 
 .about-description{
     font-size: 24px;
+    font-weight: 400;
 }
 
 
@@ -93,6 +91,7 @@ p{
         max-width: 88vw;
         width: clamp(300px, 87vw, 712px);
     }
+    
    .about-description{
         font-size: 16px;
     }

@@ -30,7 +30,7 @@
   border-radius: 25px;
 }
 
-.banner-home h2{
+.banner-home h1{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -54,14 +54,14 @@
     margin: 0 0 22px 0;
   }
 
-  .banner-home h2{
+  .banner-home p{
     font-size: 24px;
     line-height: 100%;
   }
 }
 
 @media all and (max-width: 350px){
-  .banner-home h2{
+  .banner-home p{
     font-size: 18px;
   }
 }
