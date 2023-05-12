@@ -19,7 +19,7 @@ function Header() {
   }
     return (
       <header className="header-flex">
-       <a id='home-nav'  href='/'><img src={logo} alt="Logo Kasea"></img></a> 
+       <a  href='/'><img src={logo} alt="Logo Kasea"></img></a> 
         <nav>
         <ul className="header-list">
           <li><a id='home-nav'  href='/'>Accueil</a></li> 
